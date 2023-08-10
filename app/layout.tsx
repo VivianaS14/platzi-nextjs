@@ -1,4 +1,5 @@
-import NavBar from "../components/NavBar";
+// path alias the one who allow the @ to find the file -> you can find in tsconfig.ts
+import NavBar from "@components/NavBar";
 import "./global.css";
 
 export const metadata = {
