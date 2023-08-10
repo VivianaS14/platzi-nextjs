@@ -3,7 +3,6 @@ import NavBar from "../../components/NavBar";
 export default function Page() {
   return (
     <>
-      <NavBar />
       <h3>Hello from About</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis
