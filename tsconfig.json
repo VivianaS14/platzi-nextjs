@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@database": ["database/db.ts"],
+      "@cors": ["cors-middleware.ts"],
+      "@components/*": ["components/*"],
+      "@store/*": ["store/*"]
+    },
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -28,7 +36,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, ".next/types/app/api/fluff/page.tsx"  ],
   "exclude": [
     "node_modules"
   ]
