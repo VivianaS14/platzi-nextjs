@@ -1,6 +1,5 @@
 // path alias the one who allow the @ to find the file -> you can find in tsconfig.ts
 import NavBar from "@components/NavBar";
-import "./global.css";
 
 export const metadata = {
   title: "Next.js",
@@ -19,17 +18,6 @@ export default function RootLayout({
         {/* web font */}
         {/* stylesheet */}
         {/* script/js */}
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-          crossOrigin="anonymous"
-        ></link>
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-          crossOrigin="anonymous"
-        ></script>
       </head>
       <body className="my-body-class">
         <NavBar />
