@@ -1,5 +1,6 @@
 // path alias the one who allow the @ to find the file -> you can find in tsconfig.ts
-import NavBar from "@components/NavBar";
+import NavBar from "@components/NavBar/NavBar";
+import "./global.css";
 
 export const metadata = {
   title: "Next.js",
