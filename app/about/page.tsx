@@ -31,7 +31,7 @@ const fluffFacts = [
 export default function Page() {
   return (
     <section className="aboutContainer">
-      <h1>5 Surprising Facts about Fluffs</h1>
+      <h1 className="aboutHeader">5 Surprising Facts about Fluffs</h1>
       <figure className="figureAbout">
         <div>
           <img src="/images/CryptoFluff_0090.jpg" alt="Fluff" />
