@@ -1,0 +1,24 @@
+.cardContainer {
+  margin: 1rem;
+
+  background-color: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.28571429rem;
+}
+
+.imageCard {
+  border-top-left-radius: 0.28571429rem;
+  border-top-right-radius: 0.28571429rem;
+}
+
+.cardInfo {
+  padding: 1rem;
+  line-height: 1.5;
+}
+.cardInfo h3 {
+  color: #303030;
+}
+.cardInfo p {
+  color: #888;
+}

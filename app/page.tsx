@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { TProduct } from "index";
 import KawaiiHeader from "@components/KawaiiHeader/KawaiiHeader";
+import ProductList from "@components/ProductList/ProductList";
 
 export default function Page() {
   const [productsList, setProductsList] = useState<TProduct[]>([]);
@@ -29,21 +30,7 @@ export default function Page() {
         </Link>
       </section>
 
-      <ul className="list-container">
-        {productsList.map((fluff) => (
-          <li key={fluff.id}>
-            <h4>{fluff.name}</h4>
-            <div>
-              <img
-                src={fluff.image as string}
-                alt={`Fluff - ${fluff.name}`}
-                width={100}
-              />
-            </div>
-            <Link href={`/product/${fluff.id}`}>{fluff.sku}</Link>
-          </li>
-        ))}
-      </ul>
+      <ProductList products={productsList} />
     </main>
   );
 }
