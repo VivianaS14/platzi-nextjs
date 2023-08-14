@@ -6,6 +6,7 @@
 .overviewContainer {
   display: grid;
   grid-template-columns: auto 60%;
+  gap: 1rem;
 }
 
 .imgContainer {
@@ -30,7 +31,7 @@
 }
 
 .skuDescription {
-  width: 20%;
+  width: 30%;
   padding: 2px 3px;
   margin-top: 0.5rem;
   text-align: center;
@@ -38,6 +39,54 @@
 
   background-color: #e8e8e8;
   border-radius: 0.35485rem;
+}
+
+.addToCartContainer {
+  margin-top: 1.5rem;
+}
+.inputContainer {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.inputContainer input {
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-top-left-radius: 0.35485rem;
+  border-bottom-left-radius: 0.35485rem;
+}
+.inputContainer input:focus {
+  outline: none;
+}
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.inputContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgb(37, 158, 37);
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-top-right-radius: 0.35485rem;
+  border-bottom-right-radius: 0.35485rem;
+  cursor: pointer;
+}
+.inputContainer button:hover {
+  background-color: #369112;
 }
 
 .attributesContainer {
@@ -83,4 +132,22 @@
 td {
   padding: 1.3rem 1rem;
   border: 1px solid rgba(34, 36, 38, 0.1);
+}
+
+@media screen and (width < 768px) {
+  .overviewContainer {
+    grid-template-columns: auto;
+  }
+  .contentContainer {
+    padding: 0 1.5rem;
+  }
+  .skuDescription {
+    width: auto;
+  }
+  .imgContainer img {
+    width: 150px;
+  }
+  .inputContainer {
+    width: 100%;
+  }
 }

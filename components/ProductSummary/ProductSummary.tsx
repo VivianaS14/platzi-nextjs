@@ -2,6 +2,7 @@ import React from "react";
 import ProductAttributes from "./ProductAttributes";
 import { TProduct } from "index";
 import "./ProductSummary.css";
+import AddToCart from "./AddToCart";
 
 interface Props {
   product: TProduct;
@@ -23,6 +24,7 @@ export default function ProductSummary({ product }: Props) {
               <p>$ {price}</p>
               <p className="skuDescription">SKU: {sku}</p>
             </div>
+            <AddToCart product={product} />
           </div>
         </div>
       </section>
