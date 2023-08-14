@@ -1,0 +1,61 @@
+.aboutContainer {
+  max-width: 80ch;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.figureAbout {
+  margin: 2rem auto 3rem;
+  text-align: center;
+}
+
+.figureAbout figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.factsList {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4.5rem 3rem;
+
+  counter-reset: orderedlist;
+}
+
+.factsList > li::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist);
+
+  position: absolute;
+  top: -43px;
+  left: -5px;
+  color: #cecece;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.factsList > li {
+  position: relative;
+}
+.headerFact:first-child {
+  padding-left: 40px;
+  margin-bottom: 2rem;
+}
+
+@media screen and (width < 768px) {
+  .aboutContainer {
+    padding: 0 1rem;
+  }
+
+  ol {
+    padding: 0 1rem;
+  }
+}
