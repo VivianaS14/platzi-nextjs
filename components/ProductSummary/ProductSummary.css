@@ -1,0 +1,86 @@
+.productContainer {
+  width: 80%;
+  margin: 1.5rem auto;
+}
+
+.overviewContainer {
+  display: grid;
+  grid-template-columns: auto 60%;
+}
+
+.imgContainer {
+  text-align: center;
+}
+.imgContainer img {
+  border-radius: 0.35485rem;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  line-height: 2.1;
+  color: #303030;
+}
+
+.contentContainer h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.skuDescription {
+  width: 20%;
+  padding: 2px 3px;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 12px;
+
+  background-color: #e8e8e8;
+  border-radius: 0.35485rem;
+}
+
+.attributesContainer {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.attributesContainer > h3 {
+  margin-bottom: 1rem;
+}
+
+.attributesContainer > p {
+  line-height: 1.5;
+}
+
+.divider {
+  height: 0;
+  margin: 2rem 0;
+  line-height: 1;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.85);
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.attributesTable {
+  width: 100%;
+  margin: 1em 0;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  border-radius: 0.35485rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: none;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.attributesTable th {
+  background-color: #f1f1f1;
+}
+.attributesTable th,
+td {
+  padding: 1.3rem 1rem;
+  border: 1px solid rgba(34, 36, 38, 0.1);
+}

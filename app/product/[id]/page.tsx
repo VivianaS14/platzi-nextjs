@@ -1,5 +1,6 @@
 "use client";
 
+import ProductSummary from "@components/ProductSummary/ProductSummary";
 import { TProduct } from "index";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -19,16 +20,9 @@ export default function Page({ params }) {
     <div>
       {product && (
         <>
-          <h3>{product.name}</h3>
-          <p>{product.attributes.description}</p>
-          <img src={product.image as string} alt={product.name} />
+          <ProductSummary product={product} />
         </>
       )}
-      <hr />
-
-      <button>
-        <Link href="/">Go Back</Link>
-      </button>
     </div>
   );
 }
