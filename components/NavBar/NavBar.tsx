@@ -9,10 +9,6 @@ import "./Navbar.css";
 export default function NavBar() {
   const pathName = usePathname();
 
-  useEffect(() => {
-    console.log(pathName);
-  }, []);
-
   return (
     <header>
       <menu>
