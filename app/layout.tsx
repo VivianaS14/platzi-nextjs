@@ -1,5 +1,6 @@
 // path alias the one who allow the @ to find the file -> you can find in tsconfig.ts
 import NavBar from "@components/NavBar/NavBar";
+import Footer from "@components/Footer/Footer";
 import "./global.css";
 
 export const metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className="my-body-class">
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
