@@ -1,0 +1,60 @@
+.yesOrNoContainer {
+  width: 80vw;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.yesOrNoText {
+  color: #a639ff;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.loading {
+  color: gray;
+}
+
+.buttonsContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.triggerBtn {
+  width: 20%;
+  margin: auto;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 0.3548rem;
+
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #a639ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.triggerBtn:hover {
+  background-color: #9218f5;
+}
+
+.loadingBtn {
+  background-color: gray;
+}
+
+.loadingBtn:hover {
+  background-color: gray;
+}
+
+.btn {
+  width: 17%;
+  margin: auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3548rem;
+
+  border: 1px solid #888;
+  text-decoration: none;
+  color: #303030;
+}

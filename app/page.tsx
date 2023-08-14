@@ -20,6 +20,14 @@ export default function Page() {
   return (
     <main>
       <KawaiiHeader />
+      <section style={{ textAlign: "center", marginBottom: "2rem" }}>
+        <Link
+          href="/yes-or-no"
+          style={{ textDecoration: "none", color: "#4183c4" }}
+        >
+          ¿Debería comer un fluff hoy?
+        </Link>
+      </section>
 
       <ul className="list-container">
         {productsList.map((fluff) => (
