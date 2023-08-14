@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
-.my-body-class {
+#my-body-class {
   font-family: var(--font-lato);
 
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+#my-body-class > main {
+  margin: 1rem auto 0;
+  max-width: 80ch;
 }

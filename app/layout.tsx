@@ -29,7 +29,7 @@ export default function RootLayout({
         {/* stylesheet */}
         {/* script/js */}
       </head>
-      <body className="my-body-class">
+      <body id="my-body-class">
         <NavBar />
         {children}
         <Footer />

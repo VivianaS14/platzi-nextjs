@@ -1,0 +1,135 @@
+.headerContainer {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.aliveHeader {
+  display: flex;
+  align-items: center;
+
+  letter-spacing: 3px;
+}
+
+.modalHeader {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContainer {
+  width: 70%;
+  margin: 15% auto;
+  line-height: 2.3;
+
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 0.4548rem;
+}
+
+.modalInfo {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto 70%;
+  justify-items: center;
+  align-items: center;
+}
+
+.modalText > p {
+  color: #4d4c4c;
+}
+
+.modalButtons {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  background-color: #f3f1f1;
+  border-bottom-left-radius: 0.4548rem;
+  border-bottom-right-radius: 0.4548rem;
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+}
+
+.modalBtn {
+  padding: 0.7rem 1.5rem;
+
+  font-family: var(--font-lato);
+  font-size: 15px;
+  border: none;
+  border-radius: 0.3248rem;
+  background-color: #cecdcd;
+  color: #4d4c4c;
+  cursor: pointer;
+}
+
+.modalBtn:hover {
+  background-color: #b9b8b8;
+  color: #000000;
+}
+
+.confirmButton {
+  font-weight: 700;
+  background-color: rgb(75, 135, 248);
+  color: #fff;
+}
+
+.confirmButton:hover {
+  background-color: rgb(43, 116, 252);
+  color: #fff;
+}
+
+.fluffAnimation {
+  animation-name: shake;
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}

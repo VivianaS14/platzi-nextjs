@@ -5,6 +5,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { TProduct } from "index";
+import KawaiiHeader from "@components/KawaiiHeader/KawaiiHeader";
 
 export default function Page() {
   const [productsList, setProductsList] = useState<TProduct[]>([]);
@@ -17,12 +18,8 @@ export default function Page() {
   }, []);
 
   return (
-    <>
-      <h1>Platzi Fluff!</h1>
-      <button type="button" className="btn btn-info">
-        Should I eat a fluff today?
-      </button>
-      <br />
+    <main>
+      <KawaiiHeader />
 
       <ul className="list-container">
         {productsList.map((fluff) => (
@@ -39,6 +36,6 @@ export default function Page() {
           </li>
         ))}
       </ul>
-    </>
+    </main>
   );
 }
