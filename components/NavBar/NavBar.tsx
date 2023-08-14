@@ -5,9 +5,25 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./Navbar.css";
+import { useCart } from "@store/Cart";
 
 export default function NavBar() {
   const pathName = usePathname();
+  const { count: cartCount } = useCart();
+
+  const showCartCount = () => {
+    if (!cartCount) {
+      return "(0)";
+    }
+    if (cartCount > 9) {
+      return (
+        <span>
+          9 <sup>+</sup>
+        </span>
+      );
+    }
+    return `(${cartCount})`;
+  };
 
   return (
     <header>
@@ -34,7 +50,7 @@ export default function NavBar() {
             <div>
               <ShoppingCartIcon />
             </div>
-            <p>Canasta</p>
+            <p>Canasta {showCartCount()}</p>
           </Link>
         </nav>
       </menu>
