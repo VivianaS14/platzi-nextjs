@@ -2,7 +2,6 @@
 
 import ProductSummary from "@components/ProductSummary/ProductSummary";
 import { TProduct } from "index";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Page({ params }) {
@@ -16,13 +15,5 @@ export default function Page({ params }) {
       .then(({ data }) => setProduct(data));
   }, []);
 
-  return (
-    <div>
-      {product && (
-        <>
-          <ProductSummary product={product} />
-        </>
-      )}
-    </div>
-  );
+  return <div>{product && <ProductSummary product={product} />}</div>;
 }

@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function ProductSummary({ product }: Props) {
-  const { image, name, attributes, id, price, sku } = product;
+  const { image, name, attributes, price, sku } = product;
 
   return (
     <>
