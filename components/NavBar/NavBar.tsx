@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./Navbar.css";
 
 export default function NavBar() {
@@ -35,7 +36,7 @@ export default function NavBar() {
             }
           >
             <div>
-              <img src={"/images/carro.png"} alt="Cart Logo" width={50} />
+              <ShoppingCartIcon />
             </div>
             <p>Canasta</p>
           </Link>
