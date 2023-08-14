@@ -4,6 +4,8 @@ import Footer from "@components/Footer/Footer";
 import { Lato } from "next/font/google";
 import "./global.css";
 
+import CartProvider from "@store/Cart";
+
 const lato = Lato({
   weight: "400",
   subsets: ["latin"],
@@ -29,11 +31,13 @@ export default function RootLayout({
         {/* stylesheet */}
         {/* script/js */}
       </head>
-      <body id="my-body-class">
-        <NavBar />
-        {children}
-        <Footer />
-      </body>
+      <CartProvider>
+        <body id="my-body-class">
+          <NavBar />
+          {children}
+          <Footer />
+        </body>
+      </CartProvider>
     </html>
   );
 }
