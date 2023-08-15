@@ -30,6 +30,8 @@ export default function RootLayout({
         {/* web font */}
         {/* stylesheet */}
         {/* script/js */}
+        <link rel="icon" type="" href="/images/Fluff.png" />
+        <title>Fluff Store</title>
       </head>
       <CartProvider>
         <body id="my-body-class">
