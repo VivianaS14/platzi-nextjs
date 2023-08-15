@@ -28,8 +28,6 @@ const AddToCart = ({ product }: Props) => {
   };
 
   const handleSubmit = () => {
-    console.log(quantity);
-
     const error = validate(quantity);
     setError(error);
 
