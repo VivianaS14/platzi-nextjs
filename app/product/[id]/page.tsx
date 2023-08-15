@@ -10,7 +10,7 @@ export default function Page({ params }) {
 
   useEffect(() => {
     window
-      .fetch(`http://localhost:3000/api/fluffs/${fluffId}`)
+      .fetch(`https://fluff-store.vercel.app/api/fluffs/${fluffId}`)
       .then((res) => res.json())
       .then(({ data }) => setProduct(data));
   }, []);
