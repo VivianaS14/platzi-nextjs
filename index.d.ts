@@ -18,3 +18,9 @@ type TProduct = {
   image: Url;
   attributes: TProductAttributes;
 };
+
+type TAPIFluffResponse = {
+  length: number;
+  data: TProduct[];
+  error?: string;
+};
