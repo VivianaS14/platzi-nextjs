@@ -16,6 +16,7 @@
 
 @media screen and (width < 768px) {
   .productsContainer {
+    width: 90%;
     grid-template-columns: auto;
   }
 }

@@ -22,3 +22,9 @@
 .cardInfo p {
   color: #888;
 }
+
+@media screen and (width < 768px) {
+  .imageCard img {
+    width: 150px;
+  }
+}
