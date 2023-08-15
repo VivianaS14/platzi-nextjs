@@ -58,4 +58,8 @@
   ol {
     padding: 0 1rem;
   }
+
+  .figureAbout img {
+    width: 300px;
+  }
 }
