@@ -1,0 +1,19 @@
+.cartContainer {
+  width: 60%;
+}
+
+.divider {
+  height: 0;
+  margin: 2rem 0;
+  line-height: 1;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.85);
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (width < 768px) {
+  .cartContainer {
+    width: 90%;
+  }
+}

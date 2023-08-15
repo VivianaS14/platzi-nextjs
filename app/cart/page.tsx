@@ -1,13 +1,19 @@
+"use client";
+
+import CartItemList from "@components/CartItemList/CartItemList";
+import { useCart, useCartMutations } from "@store/Cart";
+import "./cart.css";
+import CartSummary from "@components/CartSummary/CartSummary";
+
 export default function Page() {
+  const { items, subtotal } = useCart();
+  const { removeFromCart } = useCartMutations();
+
   return (
-    <div>
-      <h3>Hello from Cart</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis
-        voluptatibus, saepe rerum aspernatur ab nihil beatae necessitatibus ut
-        laboriosam reiciendis cumque. Ducimus saepe asperiores cupiditate.
-        Temporibus perspiciatis hic ducimus.
-      </p>
-    </div>
+    <main className="cartContainer">
+      <CartItemList items={items} removeFromCart={removeFromCart} />
+      <div className="divider"></div>
+      <CartSummary totalAmount={subtotal} />
+    </main>
   );
 }
